@@ -1,0 +1,19 @@
+html, body {
+    width: 100vw;
+}
+
+h1 {
+    font-size: x-large;
+    color: blue;
+}
+
+#bg1 {
+    background-image: ;
+}
+
+nav {
+    height: 10vh;
+    width: 100vw;
+    background-color: blue;
+    display: flex;
+}
