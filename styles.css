@@ -3,13 +3,21 @@ html, body {
     padding: 0;
 }
 
-h1 {
-    font-size: x-large;
-    color: blue;
+h1, h2, h3, h4, p {
+    padding: 0;
+    margin: 0;
 }
 
 #bg1 {
-    background-image: ;
+    background: no-repeat;
+    background-position: 0 -500px;
+    background-image: url('https://wallpapers.com/images/featured/nature-2ygv7ssy2k0lxlzu.jpg');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 93vh;
+    color: white;
 }
 
 nav {
@@ -21,14 +29,20 @@ nav {
 }
 
 .nav-title-container {
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: left;
     width: 50%;
 }
 
+.nav-icon {
+    padding-left: 1vw;
+    height: 80%;
+}
+
 .nav-title {
-    padding-left: 30px;
+    padding-left: 1vw;
     font-size: 30px;
     color: white;
 }
@@ -41,6 +55,9 @@ nav {
 }
 
 .nav-element {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 15%;
     height: 100%;
     font-size: 20px;
@@ -53,4 +70,35 @@ nav {
 .nav-element:hover {
     color: black;
     background-color: white;
+}
+
+#student-name {
+    font-size: 50px;
+}
+
+#student-major {
+    font-size: 30px;
+}
+
+#student-school {
+    font-size: 30px;
+}
+
+.link-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.student-info {
+    font-size: 20px;
+    width: 50%;
+    text-align: center;
+    color: white;
+    transition-duration: 300ms;
+}
+
+.link:hover {
+    font-size: 30px;
 }
