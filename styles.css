@@ -12,7 +12,7 @@ h1, h2, h3, h4, p {
     background: no-repeat;
     background-position: 0 0;
     background-size: cover;
-    background-image: url('https://wallpapers.com/images/featured/nature-2ygv7ssy2k0lxlzu.jpg');
+    background-image: url('https://blog.depositphotos.com/wp-content/uploads/2017/07/Soothing-nature-backgrounds-2.jpg.webp');
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,7 +21,7 @@ h1, h2, h3, h4, p {
     color: white;
 }
 
-#bg2 {
+.bg2 {
     background-color: rgb(226, 226, 226);
     display: flex;
     flex-direction: column;
@@ -135,8 +135,6 @@ hr {
     align-items: center;
 }
 
-
-
 .skills-list {
     width: 30%;
     height: 70%;
@@ -198,11 +196,69 @@ hr {
     padding-top: 2%;
 }
 
+.card li:hover {
+    animation: bounce 800ms;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
 .card img {
     width: 40%;
 }
 
 .card h6 {
+    text-align: center;
     padding: 0;
     margin: 0;
+}
+
+#hobbies-title-container {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hobbies-title-container h4 {
+    font-size: 40px;
+}
+
+.hobbies-container {
+    height: 45%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hobby {
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    box-shadow: 10px 10px 10px gray;
+    height: 50%;
+    width: 25%;
+}
+
+.hobby img {
+    height: 70%;
+}
+
+.hobby p {
+    padding: 5%;
+    font-size: 20px;
 }
