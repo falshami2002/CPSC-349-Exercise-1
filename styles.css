@@ -10,7 +10,8 @@ h1, h2, h3, h4, p {
 
 #bg1 {
     background: no-repeat;
-    background-position: 0 -500px;
+    background-position: 0 0;
+    background-size: cover;
     background-image: url('https://wallpapers.com/images/featured/nature-2ygv7ssy2k0lxlzu.jpg');
     display: flex;
     flex-direction: column;
@@ -21,15 +22,13 @@ h1, h2, h3, h4, p {
 }
 
 #bg2 {
-    background: no-repeat;
-    background-position: 0 -500px;
-    background-image: url('https://wallpapers.com/images/featured/nature-2ygv7ssy2k0lxlzu.jpg');
+    background-color: rgb(226, 226, 226);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 93vh;
-    color: white;
+    color: black;
 }
 
 nav {
@@ -84,6 +83,10 @@ nav {
     background-color: white;
 }
 
+hr {
+    width: 45%;
+}
+
 #student-name {
     font-size: 50px;
 }
@@ -113,4 +116,93 @@ nav {
 
 .link:hover {
     font-size: 30px;
+}
+
+#skills-title-container {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+
+#skills-lang-container {
+    width: 100%;
+    height: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+.skills-list {
+    width: 30%;
+    height: 70%;
+}
+
+.skills-list h6{
+    font-size: 30px;
+}
+
+.skills-list li {
+    font-size: 20px;
+}
+
+#skills-prof-container {
+    width: 30%;
+    margin-bottom: 2%;
+    height: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#skills-prof-container h2 {
+    font-size: 30px;
+    padding-bottom: 5%;
+}
+
+#skills-prof-container table, th, td {
+    border: 2px solid;
+    font-size: 30px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    box-shadow: 10px 10px 10px gray;
+}
+
+.card ul, menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card li {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2%;
+}
+
+.card img {
+    width: 40%;
+}
+
+.card h6 {
+    padding: 0;
+    margin: 0;
 }
