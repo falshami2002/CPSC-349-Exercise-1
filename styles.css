@@ -1,10 +1,19 @@
-html, body {
+html,
+body {
+    height: fit-content;
     margin: 0;
     padding: 0;
 }
 
-h1, h2, h3, h4, p {
-    padding: 0;
+h1,
+h2,
+h3,
+h4,
+p {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
     margin: 0;
 }
 
@@ -17,7 +26,6 @@ h1, h2, h3, h4, p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 93vh;
     color: white;
 }
 
@@ -27,55 +35,173 @@ h1, h2, h3, h4, p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 93vh;
     color: black;
 }
 
+@media only screen and (max-width: 800px) {
+    nav {
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        height: 200vh;
+        width: 10vw;
+        margin: 0;
+        overflow: hidden;
+    }
+    .nav-icon {
+        padding-top: 1vh;
+        width: 80%;
+    }
+    .nav-title {
+        display: none;
+        font-size: 0;
+    }
+    .nav-title-container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 10%;
+    }
+    .nav-element-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        width: 100%;
+    }
+    .nav-element {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 30%;
+        font-size: 15px;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        transition-duration: 300ms;
+        margin-top: 10px;
+    }
+    #bg1 {
+        height: 100vh;
+        width: 90vw;
+    }
+    .page-container {
+        display: flex;
+        height: fit-content;
+    }
+    .bg2 {
+        width: 90vw;
+        height: 200vh;
+    }
+    #skills-title-container {
+        font-size: 30px;
+    }
+    #skills-lang-container {
+        height: 90%;
+        flex-direction: column;
+    }
+    .skills-list {
+        width: 70%;
+        height: 30%;
+    }
+    #skills-prof-container {
+        width: 70%;
+    }
+    #hobbies-title-container h4 {
+        font-size: 30px;
+    }
+    .hobbies-container {
+        height: 40%;
+        flex-direction: column;
+    }
+    .hobby {
+        height: 25%;
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    nav {
+        max-width: 100%;
+        height: 7vh;
+        width: 100vw;
+    }
+    .nav-icon {
+        padding-left: 1vw;
+        height: 80%;
+    }
+    .nav-title-container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        width: 50%;
+    }
+    .nav-element-container {
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        width: 50%;
+    }
+    .nav-element {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 15%;
+        height: 100%;
+        font-size: 20px;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        transition-duration: 300ms;
+    }
+    #bg1 {
+        max-height: 93vh;
+        min-height: 93vh;
+        min-width: 100vw;
+        height: 93vh;
+    }
+    .bg2 {
+        height: 93vh;
+    }
+    #skills-title-container {
+        font-size: 50px;
+    }
+    #skills-lang-container {
+        height: 45%;
+    }
+    .skills-list {
+        width: 30%;
+        height: 70%;
+    }
+    #skills-prof-container {
+        width: 30%;
+        height: 45%;
+    }
+    #hobbies-title-container h4 {
+        font-size: 40px;
+    }
+    .hobbies-container {
+        width: 100%;
+        height: 45%;
+    }
+    .hobby {  
+        height: 50%;
+        width: 25%;
+    }
+}
+
 nav {
-    height: 7vh;
-    width: 100vw;
-    max-width: 100%;
-    background-color: rgb(34, 34, 34);
+    background: rgb(34, 34, 34);
     display: flex;
-}
-
-.nav-title-container {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    width: 50%;
-}
-
-.nav-icon {
-    padding-left: 1vw;
-    height: 80%;
 }
 
 .nav-title {
     padding-left: 1vw;
     font-size: 30px;
     color: white;
-}
-
-.nav-element-container {
-    display: flex;
-    align-items: center;
-    justify-content: right;
-    width: 50%;
-}
-
-.nav-element {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 15%;
-    height: 100%;
-    font-size: 20px;
-    text-align: center;
-    text-decoration: none;
-    color: white;
-    transition-duration: 300ms;
 }
 
 .nav-element:hover {
@@ -124,24 +250,18 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 50px;
+    text-align: center;
 }
 
 #skills-lang-container {
     width: 100%;
-    height: 45%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.skills-list {
-    width: 30%;
-    height: 70%;
-}
-
-.skills-list h6{
-    font-size: 30px;
+.skills-list h6 {
+    font-size: 20px;
 }
 
 .skills-list li {
@@ -149,9 +269,7 @@ hr {
 }
 
 #skills-prof-container {
-    width: 30%;
     margin-bottom: 2%;
-    height: 45%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -159,13 +277,18 @@ hr {
 }
 
 #skills-prof-container h2 {
-    font-size: 30px;
+    font-size: 20px;
     padding-bottom: 5%;
+    text-align: center;
 }
 
-#skills-prof-container table, th, td {
+#skills-prof-container table,
+th,
+td {
     border: 2px solid;
-    font-size: 30px;
+    border-width: 2px;
+    border-style: solid;
+    font-size: 15px;
 }
 
 .card {
@@ -179,7 +302,8 @@ hr {
     box-shadow: 10px 10px 10px gray;
 }
 
-.card ul, menu {
+.card ul,
+menu {
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -198,15 +322,19 @@ hr {
 
 .card li:hover {
     animation: bounce 800ms;
+    animation-duration: 800ms;
+    animation-name: bounce;
 }
 
 @keyframes bounce {
     0% {
         transform: translateY(0);
     }
+
     50% {
         transform: translateY(-15px);
     }
+
     100% {
         transform: translateY(0);
     }
@@ -219,7 +347,10 @@ hr {
 .card h6 {
     text-align: center;
     padding: 0;
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 #hobbies-title-container {
@@ -230,16 +361,10 @@ hr {
     align-items: center;
 }
 
-#hobbies-title-container h4 {
-    font-size: 40px;
-}
-
 .hobbies-container {
-    height: 45%;
-    width: 100%;
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-around;
 }
 
 .hobby {
@@ -250,8 +375,6 @@ hr {
     align-items: center;
     border-radius: 25px;
     box-shadow: 10px 10px 10px gray;
-    height: 50%;
-    width: 25%;
 }
 
 .hobby img {
