@@ -43,10 +43,13 @@ p {
         flex-direction: column;
         justify-content: start;
         align-items: center;
-        height: 200vh;
+        height: 100vh;
         width: 10vw;
         margin: 0;
-        overflow: hidden;
+        padding-bottom: 100vh;
+    }
+    nav.main-nav {
+        padding-bottom: 0;
     }
     .nav-icon {
         padding-top: 1vh;
